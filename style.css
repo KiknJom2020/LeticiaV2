@@ -1,0 +1,499 @@
+html {
+    font-family: 'Mulish', Roboto, sans-serif;
+    font-size: 16px;
+}  
+h1, h2 {
+    font-family: "Manrope", Roboto, sans-serif;
+}
+
+.author {
+    font-size: 1.1rem;
+}
+
+/**********navbar**********/
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0C68F2;
+    border: solid 0.1rem  white;
+}
+div .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    height: 100%;
+}
+
+.logo h2 {
+    padding-left: 1rem;
+    padding-top: 1.3125rem;
+    padding-bottom: 1.3125rem;
+    margin: 0;
+}
+.logo i {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    text-shadow: 0.06rem 0.06rem 0.25rem black;
+}
+.index {
+    font-family: "Manrope", Roboto, sans-serif;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    text-shadow: 0.06rem 0.06rem 0.25rem black;
+    font-weight: 600;
+    text-decoration: none;
+}
+.index:hover {
+    color: #FA9EF4;
+    text-shadow: 0.06rem 0.06rem 0.1rem #6967DB;
+    transition: color 300ms linear;
+}
+    
+.navbarlist {
+    list-style-type: none;
+    padding-left: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;    
+    background-color: #0C68F2;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 50%;
+}
+
+.navlink {
+    padding-left: 0.6rem;
+    text-shadow: 0.06rem 0.06rem 0.25rem black;
+    font-weight: 500;
+    color: azure;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    color: #FA9EF4;
+    text-shadow: 0.06rem 0.06rem 0.1rem #6967DB;
+    transition: color 300ms linear;
+}
+/**********main content**********/
+.main {
+   margin-top: 6.3rem;
+   display: grid;
+   grid-template: repeat(7, 10rem) / repeat(12, 1fr);
+   gap: 0.5rem 0.5rem;
+   background-color: #B2D0FF;
+}
+
+/**********foto**********/
+.grid1 {
+   grid-area: 1 / 1 / span 4 / span 3;
+   background-color: #75AAF8;
+   color: white;
+   text-shadow: 0.03rem 0.03rem 0.2rem black, 0.03rem 0.03rem 0.1rem #00259A;
+   padding: 0.5rem 0.5rem;
+   text-align: center;
+}
+
+.grid1 img {
+    object-fit:fill;
+    padding-bottom: 0.5rem;
+}
+
+.grid1 p {
+   font-size: 1.3rem;
+}
+.grid1 h2 {
+    padding-top: 0;
+}
+.grid1 p, h1, h2, h3 {
+    font-family: "Manrope", Roboto, sans-serif;
+    margin:0;
+}
+
+.grid1 i {
+    font-size: 2rem;
+    padding-top: 0.5rem;
+}
+.grid1 span {
+    text-decoration: underline;
+    color: black;
+}
+
+/**********presentation**********/
+.grid2 {
+    grid-area: 1 / 4 / span 3 / span 6;
+    background-color: #D5EFFF;
+    color: #00259A;
+    text-shadow: 0.03rem 0.03rem 0.3rem #70C77C;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   }
+.grid2 h1{
+    font-family: "Manrope", Roboto, sans-serif;
+    padding-bottom: 0.5rem;
+    text-shadow: 0.03rem 0.03rem 0.3rem #70C77C;
+}
+.grid2 h2 {
+    padding-top: 0;
+}
+.grid2 p {
+    margin-top: 0.3rem;
+    padding: 0rem 4rem;
+    font-family: "Mulish", Roboto, Sans-serif;
+    line-height: 1.3;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.grid3 {
+  grid-area: 1 / 10 / span 4 / span 3;
+  background-color: #75AAF8;
+  color: black;
+  text-shadow: 0.05rem 0.05rem 0.2rem #EDF986;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.grid3 figure {
+    margin: auto;
+}
+.grid3 aside {
+    color: azure;
+    text-shadow: 0.03rem 0.03rem 0.1rem #00259A, 0.03rem 0.03rem 0.2rem black;
+    font-size: 1.7rem;
+    padding-top: 0.6rem;
+}
+
+.grid4 {
+    grid-area: 4 / 4 / span 3 / span 6;
+    background-color: #D5EFFF;
+    text-align: center;
+    color:#00259A;
+    text-shadow: 0.03rem 0.03rem 0.3rem #70C77C;
+    padding-bottom: 1rem;
+}
+.grid4 h2 {
+    font-family: "Manrope", Roboto, sans-serif;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+.grid4 p {
+    padding: 0rem 4rem;
+    line-height: 1.3;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+ }
+ .grid4 img {
+    padding-top: 1rem;
+ }
+
+.grid5 {
+    grid-area: 5 / 1 / span 3 / span 3;
+    background-color: #75AAF8;
+    text-align: center;
+    color: black;
+    text-shadow: 0.05rem 0.05rem 0.2rem #EDF986;
+    font-style: italic;
+    padding-top: 1rem;
+}
+
+.grid6 {
+   grid-area: 5 / 10 / span 3 / span 3;
+   background-color: #75AAF8;
+   align-items: center;
+   text-align: center;
+   padding-top: 1rem;
+   color:black;
+   text-shadow: 0.03rem 0.03rem 0.2rem white, 0.03rem 0.03rem 0.3rem #70C77C;
+   line-height: 1.1;
+   font-weight: 500;
+}
+.grid6 p {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+.grid6 span {
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: 500;
+}
+.grid6 iframe {
+    width: 20rem;
+    height: auto;
+}
+.grid6 a {
+    text-decoration: none;
+    text-shadow: 0.1rem 0.1rem 0.2rem white;
+
+}
+.grid6 a:hover {
+    color: #0C68F2;
+}
+.grid6 button {
+    height: 2rem;
+    border: solid 0.05rem #063070;
+    box-shadow: 0 0 0.3rem white;
+    border-radius: 0.5rem;
+}
+
+.grid7 {
+    grid-area: 7 / 4 / span 1 / span 6;
+    background-color: #00259A;
+    color: #D5EFFF;
+    text-shadow: 0.03rem 0.03rem 0.2rem black, 0.02rem 0.02rem 0.1rem white;
+    font-family: "Mukta", Roboto, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.3;
+    text-align: center;
+    padding: 2rem 3rem;
+    
+}
+
+.footer {
+    height: 3rem;
+    background-color: #0C68F2;
+    border: solid 0.1rem  white;
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    justify-content: center;
+   }
+
+.footer p, .footer a {
+    font-weight: 500;
+    color: azure;
+    text-shadow: 0.05rem 0.05rem 0.1rem black;
+    font-size: 1rem;
+   }
+
+/**********Page 2**********/
+/**********main content**********/
+.main1 {
+    margin-top: 6.3rem;
+    display: grid;
+    grid-template: repeat(6, 10rem) / repeat(12, 1fr);
+    gap: 0.5rem 0.5rem;
+    background-color: #75AAF8;
+ }
+
+ .grid1A {
+    grid-area: 1 / 1 / span 3 / span 7;
+    background-color: #D5EFFF;
+    color: #00259A;
+    text-shadow: 0.03rem 0.03rem 0.3rem #70C77C;
+    padding-left: 1rem;
+    padding-right: 2rem;
+ }
+
+ .grid1A h1 {
+    padding-top: 2rem;
+    padding-left: 4rem;
+    font-family: "Manrope", Roboto, sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+ }
+
+ .grid1A p {
+    font-size: 1.2rem;
+    padding-left: 4rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+ }
+
+ .grid1A ul {
+    padding-left: 5rem;
+    font-size: 1.2rem;
+   }
+
+ .grid1A li {
+    align-items: left;
+ }
+
+ul.gridul {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    width: 70%;
+    height: 10rem;
+    margin-bottom: 0;
+ }
+.gridul1 {
+    grid-area: 1 / 1 / 1 / 1;
+}
+.gridul2 {
+    grid-area: 1 / 2 / 1 / 2;
+}
+p.grid1AFA {
+    text-align: left;
+    font-size: 3rem;
+    margin: 0;
+    word-spacing: 6rem;
+}
+.grid2A {
+    grid-area: 1 / 8 / span 3 / span 5;
+    background-color: #75AAF8;
+    padding-top: 0.5rem;
+    color: black;
+    text-shadow: 0.05rem 0.05rem 0.2rem #EDF986;
+    text-align: center;
+    font-size: 0.75rem;
+    margin: 0;
+ }
+ .grid2A figure {
+    margin: 0;
+    padding: 1rem 0.5rem 0.5rem;
+ }
+
+ .grid3A {
+    grid-area: 4 / 1 / span 3 / span 5;
+    background-color: #75AAF8;
+        color: black;
+    text-shadow: 0.05rem 0.05rem 0.2rem #EDF986;
+    font-size: 0.75rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    margin: 0;
+ }
+ .grid3A img {
+    margin: 0.3rem auto;
+ }
+
+ .grid4A {
+    grid-area: 4 / 6 / span 3 / span 7;
+    background-color: #D5EFFF;
+    color: #00259A;
+    text-shadow: 0.03rem 0.03rem 0.3rem #70C77C;
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    line-height: 1.5;
+ }
+
+ .grid4A h1, h2 {
+    text-align: center;
+    padding-bottom: 0.5;
+ }
+ .grid4A p {
+    font-size: 1.2rem;
+    margin-top: 0;
+ }
+ 
+ /**********Page 3**********/
+/**********main content**********/
+.main2 {
+    margin-top: 6.3rem;
+    display: grid;
+    grid-template: repeat(7, 10rem) / repeat(12, 1fr);
+    gap: 0.5rem 0.5rem;
+    background-color: #75AAF8;
+ }
+
+ .grid1B {
+    grid-area: 1 / 1 / span 3 / span 5;
+    background-color: #75AAF8;
+    color: black;
+    text-shadow: 0.05rem 0.05rem 0.2rem #EDF986;
+    text-align: center;
+    font-size: 0.75rem;
+ }
+ .grid1B figure {
+    margin: 0;
+    padding: 1rem 1rem;
+ }
+   
+.grid2B {
+    grid-area: 1 / 6 / span 4 / span 7;
+    background-color: #D5EFFF;
+    color: #00259A;
+    text-shadow: 0.03rem 0.03rem 0.3rem #70C77C;
+    text-align: center;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    line-height: 1.2;
+ }
+.grid2B p {
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+}
+.grid2B h1, h2, h3 {
+    padding-top: 0.5rem;
+}
+.grid2B i {
+    color: red;
+}
+
+ .grid3B {
+    grid-area: 5 / 1 / span 3 / span 7;
+    background-color: #D5EFFF;
+    color: #00259A;
+    text-shadow: 0.03rem 0.03rem 0.3rem #70C77C;
+    text-align: center;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    line-height: 1.2;
+ }
+ .grid3B p {
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    text-align:center ;
+}
+.grid3B h1, h2, h3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+p.bigger {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}
+
+ .grid4B {
+    grid-area: 5 / 8 / span 3 / span 5;
+    background-color: #75AAF8;
+    color: black;
+    text-shadow: 0.05rem 0.05rem 0.2rem #EDF986;
+    text-align: center;
+    font-size: 0.75rem;
+ }
+ .grid4B figure {
+    margin: 0;
+    padding: 1rem 0;
+ }
+ .grid5B {
+    grid-area: 4 / 1 / span 1 / span 5;
+    background-color: #00259A;
+    color: #D5EFFF;
+    text-shadow: 0.03rem 0.03rem 0.2rem black, 0.02rem 0.02rem 0.1rem white;
+    font-family: "Mukta", Roboto, sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1;
+    padding: 0.7rem 2.5rem;
+ }
+ .grid5B aside {
+    padding-bottom: 0.4rem;
+ }
